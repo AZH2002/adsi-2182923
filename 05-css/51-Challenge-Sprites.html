@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Sprites</title>
+    <style>
+        body
+        {
+            background-color: #17a053;
+            justify-content: center ;
+        }
+        main
+        {
+            margin: 40px auto;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 1000px;
+        }
+        section#Sprite
+        {
+            margin: 40px auto;
+            background: url(imgs/spriteweb.png) no-repeat;
+            height: 150px;
+            width:  180px;
+
+        }
+        section#Sprite.Titulo
+        {
+            background-position: -10px -400px;
+        }
+        main ul.Botones
+        {
+            list-style: none;
+            padding-left: 0px;
+        }
+        main ul.Botones li
+        {
+            display: inline-block;
+        }
+        main ul.Botones li a:link,
+        main ul.Botones li a:visited
+        {
+            color: #fff;
+            background-color: #228531;
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            text-align: center;
+            width: 160px;
+            padding: 10px 15px;
+            border-bottom: 4px solid rgb(204,204,204);
+        }
+        main ul.Botones li a:hover
+        {
+            background-color: #222121;
+            border-bottom: 4px solid #d9ff00;
+        }
+        main section
+        {
+            background-color: #218531;
+            height: 240px;
+            width: 970px;
+        }
+        main section div
+        {
+            display: inline-block;
+            width: 310px;
+            margin: 15px auto;
+            margin-left: 10px;
+        }
+        main div.CAJA1 section#Sprite1.Texto1
+        {
+            background: url(imgs/spriteweb.png);
+            border: 2px solid #777;
+            height: 200px;
+            width: 300px;
+        }
+        main div.CAJA1 section#Sprite1.Texto1 h2
+        {
+            background-color: rgba(180, 178, 178, 0.418);
+            margin: 0px;
+            padding: 5px;
+            text-align: center;
+        }
+        main div.CAJA1 section#Sprite1.Texto1 h2:hover
+        {
+            background-color: rgba(256, 256, 256, 0.6);
+        }
+        main div.CAJA1 section#Sprite1.Texto1
+        {
+            background-position: -475px -7px;
+        }
+        main div.CAJA2 section#Sprite2.Texto2
+        {
+            background: url(imgs/spriteweb.png);
+            border: 2px solid #777;
+            height: 200px;
+            width: 300px;
+        }
+        main div.CAJA2 section#Sprite2.Texto2 h2
+        {
+            background-color: rgba(180, 178, 178, 0.418);
+            margin: 0px;
+            padding: 5px;
+            text-align: center;
+        }
+        main div.CAJA2 section#Sprite2.Texto2 h2:hover
+        {
+            background-color: rgba(256, 256, 256, 0.6);
+        }
+        main div.CAJA2 section#Sprite2.Texto2
+        {
+            background-position: -475px -7px;
+        }
+        main div.CAJA3 section#Sprite3.Texto3
+        {
+            background: url(imgs/spriteweb.png);
+            border: 2px solid #777;
+            height: 200px;
+            width: 300px;
+        }
+        main div.CAJA3 section#Sprite3.Texto3 h2
+        {
+            background-color: rgba(180, 178, 178, 0.418);
+            margin: 0px;
+            padding: 5px;
+            text-align: center;
+        }
+        main div.CAJA3 section#Sprite3.Texto3 h2:hover
+        {
+            background-color: rgba(256, 256, 256, 0.6);
+        }
+        main div.CAJA3 section#Sprite3.Texto3
+        {
+            background-position: -475px -7px;
+        }
+        main section.BLOQUES
+        {
+            color: rgb(123, 54, 54);
+            background-color: #228531;
+            width: 970px;
+            height: 600px;
+        }
+        main section.BLOQUES div.BLOQUE1
+        {
+            background-color: #fff;
+            width: 950px;
+            height: 180px;
+            margin: 10px;
+            margin-left: 10px;
+        }
+        main section.BLOQUES div.BLOQUE1 div
+        {
+            display: inline-block;
+            margin: 0px auto;   
+            width: 620px;
+        }
+        main section.BLOQUES div.BLOQUE1 div#Sprite4.LSprite1
+        {
+            background: url(imgs/spriteweb.png);
+            width: 150px;
+            height: 100px;
+            ;
+        }
+        main section.BLOQUES div.BLOQUE1 div#Sprite4.LSprite1
+        {
+            background-position: -255px -500px;
+        }
+        main section.BLOQUES div.BLOQUE1 div h5:hover
+        {
+            color: #17a053;   
+        }
+        main section.BLOQUES div.BLOQUE1 div h5
+        {
+            text-align: justify;
+            width: 700px;
+        }
+        main section.BLOQUES div.BLOQUE1 div#Sprite5.LATA1
+        {
+            background: url(imgs/spriteweb.png);
+            width: 150px;
+            height: 150px;
+        }
+        main section.BLOQUES div.BLOQUE1 div#Sprite5.LATA1
+        {
+            background-position: -70px -210px;
+        }
+        main section.BLOQUES div.BLOQUE2
+        {
+            background-color: #fff;
+            width: 950px;
+            height: 180px;
+            margin: 10px;
+            margin-left: 10px;
+        }
+        main section.BLOQUES div.BLOQUE2 div
+        {
+            display: inline-block;
+            margin: 0px auto;   
+            width: 620px;
+        }
+        main section.BLOQUES div.BLOQUE2 div#Sprite6.LSprite2
+        {
+            background: url(imgs/spriteweb.png);
+            width: 150px;
+            height: 100px;
+            ;
+        }
+        main section.BLOQUES div.BLOQUE2 div#Sprite6.LSprite2
+        {
+            background-position: -255px -500px;
+        }
+        main section.BLOQUES div.BLOQUE2 div h5:hover
+        {
+            color: #17a053;   
+        }
+        main section.BLOQUES div.BLOQUE2 div h5
+        {
+            text-align: justify;
+            width: 700px;
+        }
+        main section.BLOQUES div.BLOQUE2 div#Sprite7.LATA2
+        {
+            background: url(imgs/spriteweb.png);
+            width: 150px;
+            height: 150px;
+        }
+        main section.BLOQUES div.BLOQUE2 div#Sprite7.LATA2
+        {
+            background-position: -70px -210px;
+        }
+        main section.BLOQUES div.BLOQUE3
+        {
+            background-color: #fff;
+            width: 950px;
+            height: 180px;
+            margin: 10px;
+            margin-left: 10px;
+        }
+        main section.BLOQUES div.BLOQUE3 div
+        {
+            display: inline-block;
+            margin: 0px auto;   
+            width: 620px;
+        }
+        main section.BLOQUES div.BLOQUE3 div#Sprite8.LSprite3
+        {
+            background: url(imgs/spriteweb.png);
+            width: 150px;
+            height: 100px;
+            ;
+        }
+        main section.BLOQUES div.BLOQUE3 div#Sprite8.LSprite3
+        {
+            background-position: -255px -500px;
+        }
+        main section.BLOQUES div.BLOQUE3 div h5:hover
+        {
+            color: #17a053;   
+        }
+        main section.BLOQUES div.BLOQUE3 div h5
+        {
+            text-align: justify;
+            width: 700px;
+        }
+        main section.BLOQUES div.BLOQUE3 div#Sprite9.LATA3
+        {
+            background: url(imgs/spriteweb.png);
+            width: 150px;
+            height: 150px;
+        }
+        main section.BLOQUES div.BLOQUE3 div#Sprite9.LATA3
+        {
+            background-position: -70px -210px;
+        }
+        main section.MenuF
+        {
+            background-color: #fff;
+            width: 970px;
+            height: 260px;
+        }
+        main section.MenuF div#Sprite0.SpriteF
+        {
+            background: url(imgs/spriteweb.png);
+            margin-left: 365px;
+            height: 160px;
+            width: 230px;
+        }
+        main section.MenuF div#Sprite0.SpriteF
+        {
+            background-position: -510px -440px;
+        }
+        main section.MenuF ul.Botones2
+        {
+            list-style: none;
+            padding-left: 0px;
+        } 
+        main section.MenuF ul.Botones2 li
+        {
+            display: inline-block;
+        }
+        main section.MenuF ul.Botones2 li a:link,
+        main section.MenuF ul.Botones2 li a:visited
+        {
+            color: rgb(0, 0, 0);
+            display: block;
+            padding: 10px;;
+            text-decoration: none;
+            text-align: center;
+            width: 160px;
+            padding: 10px 15px;
+        }
+        main section.MenuF ul.Botones2 li a:hover
+        {
+            border-bottom: 4px solid #228531;
+        }
+    </style>
+</head>
+<body>
+    <section id="Sprite" class="Titulo"></section>
+    <main>
+        <ul class="Botones">
+            <li><a href="">INICIO</a></li>
+            <li><a href="">NOSOTROS</a></li>
+            <li><a href="">PORTAFOLIO</a></li>
+            <li><a href="">SERVICIOS</a></li>
+            <li><a href="">CONTACTO</a></li>
+        </ul>
+        <section>
+            <div class="CAJA1">
+                <section id="Sprite1" class="Texto1">
+                    <h2>Sprite 1</h2>
+                </section>
+            </div>
+            <div class="CAJA2">
+                <section id="Sprite2" class="Texto2">
+                    <h2>Sprite 2</h2>
+                </section>
+            </div>
+            <div class="CAJA3">
+                <section id="Sprite3" class="Texto3">
+                    <h2>Sprite 3</h2>
+                </section>
+            </div>
+        </section>
+        <br>
+        <section class="BLOQUES">
+            <div class="BLOQUE1">
+                <div id="Sprite4" class="LSprite1"></div>
+                <div>
+                    <h5>
+                        ASDDASDASDSDSASDDSSDAASDSDAADSDSADSASDDSADSFASDFASDFASFDSAFDADSFF
+                        ADSADSADSSADASDDSSDDASADSADSSADADSDASDASDSADSAASDASDASDASDADSADAS
+                        DSADSADSASDADSADSADSADSASASDDASDASDSDSASDDSSDAASDSDAADSDSADSASDDS
+                        ADSADSADSSADASDDSSDDASADSADSSADADSDASDASDSADSAASDASDASDASDADSADSA
+                        DSADSADSASDADSADSADSADSASDSADSADSASDADSADSADSADSASASDDASDASDSDSAS
+                        ADSADSADSSADASDDSSDDASADSADSSADADSDASDASDSADSAASDASDASDASDADSADSS
+                        DSADSADSASDADSADSADSADSASASDDASDASDSDSASDDSSDAASDSDAADSDSADSASDDS
+                        ADSADSADSSADASDDSSDDASADSADSSADADSDASDASDSADSAASDASDASDASDADSADSA
+                        
+                    </h5>
+                </div>
+                <div id="Sprite5" class="LATA1"></div>
+            </div>
+            <div class="BLOQUE2">
+                <div id="Sprite6" class="LSprite2"></div>
+                <div>
+                    <h5>
+                        ASDDASDASDSDSASDDSSDAASDSDAADSDSADSASDDSADSFASDFASDFASFDSAFDADSFF
+                        ADSADSADSSADASDDSSDDASADSADSSADADSDASDASDSADSAASDASDASDASDADSADAS
+                        DSADSADSASDADSADSADSADSASASDDASDASDSDSASDDSSDAASDSDAADSDSADSASDDS
+                        ADSADSADSSADASDDSSDDASADSADSSADADSDASDASDSADSAASDASDASDASDADSADSA
+                        DSADSADSASDADSADSADSADSASDSADSADSASDADSADSADSADSASASDDASDASDSDSAS
+                        ADSADSADSSADASDDSSDDASADSADSSADADSDASDASDSADSAASDASDASDASDADSADSS
+                        DSADSADSASDADSADSADSADSASASDDASDASDSDSASDDSSDAASDSDAADSDSADSASDDS
+                        ADSADSADSSADASDDSSDDASADSADSSADADSDASDASDSADSAASDASDASDASDADSADSA
+                    </h5>
+                </div>
+                <div id="Sprite7" class="LATA2"></div>
+            </div>
+            <div class="BLOQUE3">
+                <div id="Sprite8" class="LSprite3"></div>
+                <div>
+                    <h5>
+                        ASDDASDASDSDSASDDSSDAASDSDAADSDSADSASDDSADSFASDFASDFASFDSAFDADSFF
+                        ADSADSADSSADASDDSSDDASADSADSSADADSDASDASDSADSAASDASDASDASDADSADAS
+                        DSADSADSASDADSADSADSADSASASDDASDASDSDSASDDSSDAASDSDAADSDSADSASDDS
+                        ADSADSADSSADASDDSSDDASADSADSSADADSDASDASDSADSAASDASDASDASDADSADSA
+                        DSADSADSASDADSADSADSADSASDSADSADSASDADSADSADSADSASASDDASDASDSDSAS
+                        ADSADSADSSADASDDSSDDASADSADSSADADSDASDASDSADSAASDASDASDASDADSADSS
+                        DSADSADSASDADSADSADSADSASASDDASDASDSDSASDDSSDAASDSDAADSDSADSASDDS
+                        ADSADSADSSADASDDSSDDASADSADSSADADSDASDASDSADSAASDASDASDASDADSADSA
+                    </h5>
+                </div>
+                <div id="Sprite9" class="LATA3"></div>
+            </div>
+        </section>
+        <br>
+        <section class="MenuF">
+            <div id="Sprite0" class="SpriteF"></div>
+            <ul class="Botones2">
+                <li><a href="">INICIO</a></li>
+            <li><a href="">NOSOTROS</a></li>
+            <li><a href="">PORTAFOLIO</a></li>
+            <li><a href="">SERVICIOS</a></li>
+            <li><a href="">CONTACTO</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
